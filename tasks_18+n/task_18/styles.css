@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+}
+.column {
+    margin-right: 20px;
+}
