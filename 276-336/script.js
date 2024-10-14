@@ -1184,8 +1184,8 @@ document.getElementById('buttonContainer793').appendChild(button793);
 const button794 = document.createElement('button');
 button794.innerText = '335_1';
 button794.addEventListener('click', function() {
-    const month = 9;
-    const day = 21;
+    const month = 10;
+    const day = 14;
 
     let zodiacSign;
 
