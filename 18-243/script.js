@@ -44,7 +44,7 @@ const button5 = document.createElement('button');
 button5.innerText = '19_1';
 button5.addEventListener('click', function() {
     let a = 5 + 5 * 3;
-    alert(a); // выведет 20
+    alert(a);
 });
 document.getElementById('buttonContainer5').appendChild(button5);
 
@@ -52,7 +52,7 @@ const button6 = document.createElement('button');
 button6.innerText = '19_2';
 button6.addEventListener('click', function() {
     let a = 5 + 5 * 3 + 3;
-    alert(a); // выведет 23
+    alert(a);
 });
 document.getElementById('buttonContainer6').appendChild(button6);
 
@@ -60,7 +60,7 @@ const button7 = document.createElement('button');
 button7.innerText = '19_3';
 button7.addEventListener('click', function() {
     let a = 8 / 2 + 2;
-    alert(a); // выведет 6
+    alert(a);
 });
 document.getElementById('buttonContainer7').appendChild(button7);
 
@@ -68,7 +68,7 @@ const button8 = document.createElement('button');
 button8.innerText = '19_4';
 button8.addEventListener('click', function() {
     let a = 8 + 2 / 2;
-    alert(a); // выведет 9
+    alert(a);
 });
 document.getElementById('buttonContainer8').appendChild(button8);
 
@@ -76,7 +76,7 @@ const button9 = document.createElement('button');
 button9.innerText = '20_1';
 button9.addEventListener('click', function() {
     let a = 8 / 2 * 2;
-    alert(a); // выведет 8
+    alert(a);
 });
 document.getElementById('buttonContainer9').appendChild(button9);
 
@@ -84,7 +84,7 @@ const button10 = document.createElement('button');
 button10.innerText = '20_2';
 button10.addEventListener('click', function() {
     let a = 8 * 4 / 2 / 2;
-    alert(a); // выведет 8
+    alert(a);
 });
 document.getElementById('buttonContainer10').appendChild(button10);
 
@@ -92,7 +92,7 @@ const button11 = document.createElement('button');
 button11.innerText = '21_1';
 button11.addEventListener('click', function() {
     let a = (2 + 3) * (2 + 3);
-    alert(a); // выведет 25
+    alert(a);
 });
 document.getElementById('buttonContainer11').appendChild(button11);
 
@@ -100,7 +100,7 @@ const button12 = document.createElement('button');
 button12.innerText = '21_2';
 button12.addEventListener('click', function() {
     let a = (2 + 3) * 2 + 3;
-    alert(a); // выведет 13
+    alert(a);
 });
 document.getElementById('buttonContainer12').appendChild(button12);
 
@@ -108,7 +108,7 @@ const button13 = document.createElement('button');
 button13.innerText = '21_3';
 button13.addEventListener('click', function() {
     let a = 2 * (2 + 4 * (3 + 1));
-    alert(a); // выведет 36
+    alert(a);
 });
 document.getElementById('buttonContainer13').appendChild(button13);
 
@@ -116,7 +116,7 @@ const button14 = document.createElement('button');
 button14.innerText = '21_4';
 button14.addEventListener('click', function() {
     let a = 2 * 8 / 4;
-    alert(a); // выведет 4
+    alert(a);
 });
 document.getElementById('buttonContainer14').appendChild(button14);
 
@@ -124,7 +124,7 @@ const button15 = document.createElement('button');
 button15.innerText = '21_5';
 button15.addEventListener('click', function() {
     let a = (2 * 8) / 4;
-    alert(a); // выведет 4
+    alert(a);
 });
 document.getElementById('buttonContainer15').appendChild(button15);
 
@@ -132,7 +132,7 @@ const button16 = document.createElement('button');
 button16.innerText = '21_6';
 button16.addEventListener('click', function() {
     let a = 2 * (8 / 4);
-    alert(a); // выведет 4
+    alert(a);
 });
 document.getElementById('buttonContainer16').appendChild(button16);
 
@@ -180,7 +180,7 @@ const button22 = document.createElement('button');
 button22.innerText = '27_1';
 button22.addEventListener('click', function() {
     let a = 3 * 2 ** 3;
-    alert(a); // выведит 24
+    alert(a);
 });
 document.getElementById('buttonContainer22').appendChild(button22);
 
@@ -188,7 +188,7 @@ const button23 = document.createElement('button');
 button23.innerText = '27_2';
 button23.addEventListener('click', function() {
     let a = (3 * 2) ** 3;
-    alert(a); // выведит 216
+    alert(a);
 });
 document.getElementById('buttonContainer23').appendChild(button23);
 
@@ -196,7 +196,7 @@ const button24 = document.createElement('button');
 button24.innerText = '27_3';
 button24.addEventListener('click', function() {
     let a = 3 * 2 ** (3 + 1);
-    alert(a); // выведит 48
+    alert(a);
 });
 document.getElementById('buttonContainer24').appendChild(button24);
 
@@ -204,7 +204,7 @@ const button25 = document.createElement('button');
 button25.innerText = '27_4';
 button25.addEventListener('click', function() {
     let a = 2 ** 3 * 3;
-    alert(a); // выведит 24
+    alert(a);
 });
 document.getElementById('buttonContainer25').appendChild(button25);
 
@@ -212,7 +212,7 @@ const button26 = document.createElement('button');
 button26.innerText = '27_5';
 button26.addEventListener('click', function() {
     let a = 3 * 2 ** 3 * 3;
-    alert(a); // выведит 72
+    alert(a);
 });
 document.getElementById('buttonContainer26').appendChild(button26);
 
@@ -251,7 +251,7 @@ document.getElementById('buttonContainer30').appendChild(button30);
 const button31 = document.createElement('button');
 button31.innerText = '30_1';
 button31.addEventListener('click', function() {
-    alert('ab asdasdde'.length); // выведет 11
+    alert('Hello world!'.length);
 });
 document.getElementById('buttonContainer31').appendChild(button31);
 
@@ -281,7 +281,7 @@ const button34 = document.createElement('button');
 button34.innerText = '34_1';
 button34.addEventListener('click', function() {
     let a = undefined;
-    alert(a); // выведет undefined
+    alert(a);
 });
 document.getElementById('buttonContainer34').appendChild(button34);
 
@@ -289,7 +289,7 @@ const button35 = document.createElement('button');
 button35.innerText = '35_1';
 button35.addEventListener('click', function() {
     let a = null;
-    alert(a); // выведет null
+    alert(a);
 });
 document.getElementById('buttonContainer35').appendChild(button35);
 
@@ -1574,7 +1574,7 @@ document.getElementById('buttonContainer174').appendChild(button174);
 const button175 = document.createElement('button');
 button175.innerText = '101_2';
 button175.addEventListener('click', function() {
-    const arr = ['a', 'b', 'c'];
+    let arr = ['a', 'b', 'c'];
     arr = [1, 2, 3]; // Попытка изменить ссылку на массив, что вызовет ошибку.
     console.log(arr); // Ошибка: TypeError: Assignment to constant variable.
 });
@@ -1583,7 +1583,7 @@ document.getElementById('buttonContainer175').appendChild(button175);
 const button176 = document.createElement('button');
 button176.innerText = '101_3';
 button176.addEventListener('click', function() {
-    const arr = ['a', 'b', 'c'];
+    let arr = ['a', 'b', 'c'];
     arr = ['a', 'b', 'c']; // Попытка изменить ссылку на массив, что вызовет ошибку.
     console.log(arr); // Ошибка: TypeError: Assignment to constant variable.
 });
