@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>245#1</h1>
+<input id="button1" type="submit" value="Двойное нажатие">
+<script>
+    let button1 = document.querySelector('#button1');
+    button1.addEventListener('dblclick', function() {
+        console.log('Произошло двойное нажатие');
+    });
+</script>
+
+<h1>245#2</h1>
+<input id="button2" type="submit" value="Наведение">
+<script>
+    let button2 = document.querySelector('#button2');
+    button2.addEventListener('mouseover', function() {
+        console.log('Произошло наведение');
+    });
+</script>
+
+<h1>245#3</h1>
+<input id="button3" type="submit" value="Уход от кнопки">
+<script>
+    let button3 = document.querySelector('#button3');
+    button3.addEventListener('mouseout', function() {
+        console.log('Курсор был убран с кнопки');
+    });
+</script>
+
+<h1>245#4</h1>
+<input id="button4" type="submit" value="Наведение и уход">
+<script>
+    let button4 = document.querySelector('#button4');
+    button4.addEventListener('mouseover', function() {
+        console.log('Наведение на кнопку');
+    });
+    button4.addEventListener('mouseout', function() {
+        console.log('Уход от кнопки');
+    });
+</script>
+
+</body>
+</html>
