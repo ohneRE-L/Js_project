@@ -5,18 +5,35 @@
     <title>Title</title>
 </head>
 <body>
-<p id="elem1">1</p>
-<p id="elem2">2</p>
-<p id="elem3">3</p>
+<h1>340#1</h1>
+<div id="block">
+    <p>1</p>
+    <p>2</p>
+</div>
 
 <script>
-    let elem1 = document.querySelector('#elem1');
-    let elem2 = document.querySelector('#elem2');
-    let elem3 = document.querySelector('#elem3');
+    let firstParagraph = document.querySelector('#block p');
+    console.log(firstParagraph);
+</script>
 
-    console.log(elem1.textContent);
-    console.log(elem2.textContent);
-    console.log(elem3.textContent);
+<h1>340#2</h1>
+<div class="block">
+    <p>1</p>
+    <p>2</p>
+</div>
+
+<script>
+    let firstParagraph = document.querySelector('.block p');
+    console.log(firstParagraph);
+</script>
+
+<h1>340#3</h1>
+<p class="www">text</p>
+<p class="www">text</p>
+
+<script>
+    let firstParagraph = document.querySelector('.www');
+    console.log(firstParagraph);
 </script>
 </body>
-</html>
+    </html>
