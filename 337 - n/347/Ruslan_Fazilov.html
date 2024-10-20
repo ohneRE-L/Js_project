@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>347#1</h1>
+<p id="elem1">Какой-то там текст</p>
+<button id="button1">Прочитать и вывести в консоль</button>
+
+<h1>347#1</h1>
+<p id="elem2">Старый текст</p>
+<button id="button2">Записать новый жирный текст</button>
+
+<script>
+    // Задача №1
+    let elem1 = document.querySelector('#elem1');
+    let button1 = document.querySelector('#button1');
+    button1.addEventListener('click', function() {
+        console.log(elem1.innerHTML);
+    });
+
+    // Задача №2
+    let elem2 = document.querySelector('#elem2');
+    let button2 = document.querySelector('#button2');
+    button2.addEventListener('click', function() {
+        elem2.innerHTML = '<b>Новый жирный текст</b>';
+    });
+</script>
+
+</body>
+</html>
