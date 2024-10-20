@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>246#1</h1>
+<p id="elem1">Какой-то там текст</p>
+<button id="button1">Прочитать и вывести</button>
+
+<h1>246#2</h1>
+<p id="elem2">Старый текст</p>
+<button id="button2">Запишите в абзац новый текст</button>
+
+
+<h1>246#3</h1>
+<p id="elem3">5</p>
+<p id="elem4">7</p>
+<button id="button3">Вывести на экран сумму хранящихся чисел</button>
+
+<h1>246#4</h1>
+<p id="elem5">3</p>
+<p id="elem6">4</p>
+<p id="elem7">8</p>
+<div id="resultDiv"></div>
+<button id="button4">Вывести на экран сумму хранящихся чисел</button>
+
+<h1>246#5</h1>
+<p id="elem8">10</p>
+<button id="button5">Прибавить к значению абзаца единицу и записать полученное число обратно</button>
+
+<h1>246#6</h1>
+<p id="elem9">Hello</p>
+<button id="button6">Записать в конец текста абзаца восклицательный знак</button>
+
+<script>
+    // Задача 246#1
+    let elem1 = document.querySelector('#elem1');
+    let button1 = document.querySelector('#button1');
+    button1.addEventListener('click', function() {
+        console.log(elem1.textContent);
+    });
+
+    // Задача 246#2
+    let elem2 = document.querySelector('#elem2');
+    let button2 = document.querySelector('#button2');
+    button2.addEventListener('click', function() {
+        elem2.textContent = 'Новый текст';
+    });
+
+    // Задача 246#3
+    let elem3 = document.querySelector('#elem3');
+    let elem4 = document.querySelector('#elem4');
+    let button3 = document.querySelector('#button3');
+    button3.addEventListener('click', function() {
+        let sum = parseInt(elem3.textContent) + parseInt(elem4.textContent);
+        console.log(sum);
+    });
+
+    // Задача 246#4
+    let elem5 = document.querySelector('#elem5');
+    let elem6 = document.querySelector('#elem6');
+    let elem7 = document.querySelector('#elem7');
+    let resultDiv = document.querySelector('#resultDiv');
+    let button4 = document.querySelector('#button4');
+    button4.addEventListener('click', function() {
+        let sum = parseInt(elem5.textContent) + parseInt(elem6.textContent) + parseInt(elem7.textContent);
+        resultDiv.textContent = sum;
+    });
+
+    // Задача 246#5
+    let elem8 = document.querySelector('#elem8');
+    let button5 = document.querySelector('#button5');
+    button5.addEventListener('click', function() {
+        let value = parseInt(elem8.textContent);
+        elem8.textContent = value + 1;
+    });
+
+    // Задача 246#6
+    let elem9 = document.querySelector('#elem9');
+    let button6 = document.querySelector('#button6');
+    button6.addEventListener('click', function() {
+        elem9.textContent += '!';
+    });
+</script>
+
+</body>
+</html>
