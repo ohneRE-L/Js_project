@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>348#1 и 348#2</h1>
+<input id="elem1" type="email">
+<button id="button1">Вывести тип</button>
+<button id="button2">Поменять тип на submit</button>
+
+<h1>348#3</h1>
+<a id="link" href="https://vk.com">Перейти на сайт</a>
+<button id="button3">Вывести href</button>
+<p id="output"></p>
+
+<h1>348#4</h1>
+<a id="link2" href="https://vk.com">Перейти на сайт</a>
+<button id="button4">Добавить в конец href</button>
+
+<h1>348#5 и 348#6</h1>
+<img id="image1" src="image1.png " width="400">
+<br>
+<p id="image-path"></p>
+<button id="button5">Вывести путь к картинке</button>
+<button id="button6">В атрибут width записать значение 300</button>
+
+<h1>348#7</h1>
+<img id="image2" src="image1.png" width="150">
+<br>
+<button id="button7">Увеличить значение атрибута Width</button>
+
+<h1>348#8</h1>
+<img id="switch-image" src="" width="150">
+<br>
+<button id="button8">Вывести картинку №1</button>
+<button id="button9">Вывести картинку №2</button>
+
+<script>
+    // Задача 348_1
+    let elem1 = document.querySelector('#elem1');
+    document.querySelector('#button1').addEventListener('click', function() {
+        console.log(elem1.type);
+    });
+
+    // Задача 348_2
+    document.querySelector('#button2').addEventListener('click', function() {
+        elem1.type = 'submit';
+    });
+
+    // Задача 348_3
+    let link = document.querySelector('#link');
+    document.querySelector('#button3').addEventListener('click', function() {
+        document.querySelector('#output').textContent = link.href;
+    });
+
+    // Задача 348_4
+    let link2 = document.querySelector('#link2');
+    document.querySelector('#button4').addEventListener('click', function() {
+        link2.textContent += ` (${link2.href})`;
+    });
+
+    // Задача 348_5
+    let image1 = document.querySelector('#image1');
+    document.querySelector('#button5').addEventListener('click', function() {
+        document.querySelector('#image-path').textContent = image1.src;
+    });
+
+    // Задача 348_6
+    document.querySelector('#button6').addEventListener('click', function() {
+        image1.width = 300;
+    });
+
+    // Задача 348_7
+    let image2 = document.querySelector('#image2');
+    document.querySelector('#button7').addEventListener('click', function() {
+        image2.width *= 2;
+    });
+
+    // Задача 348_8
+    let switchImage = document.querySelector('#switch-image');
+    document.querySelector('#button8').addEventListener('click', function() {
+        switchImage.src = 'image1.png';
+    });
+    document.querySelector('#button9').addEventListener('click', function() {
+        switchImage.src = 'image2.png';
+    });
+
+</script>
+
+</body>
+</html>
