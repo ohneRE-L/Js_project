@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>350#1</h1>
+<input id="input1">
+<script>
+    let input1 = document.querySelector('#input1');
+
+    input1.addEventListener('focus', function() {
+        input1.value = '1';
+    });
+
+    input1.addEventListener('blur', function() {
+        input1.value = '2';
+    });
+</script>
+<br>
+<br>
+
+<h1>350#2</h1>
+<input id="input2">
+<script>
+    let input2 = document.querySelector('#input2');
+
+    input2.addEventListener('blur', function() {
+        let number = parseFloat(input2.value);
+        alert(number * number);
+    });
+</script>
+<br>
+<br>
+
+<h1>350#3</h1>
+<input id="input3" value="Какой-то текст">
+<script>
+    let input3 = document.querySelector('#input3');
+
+    input3.addEventListener('focus', function() {
+        input3.value = '';
+    });
+</script>
+
+</body>
+</html>
