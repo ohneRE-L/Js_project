@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input1">
+<button id="button1">Записать текст</button>
+
+<script>
+    let input1 = document.querySelector('#input1');
+    let button1 = document.querySelector('#button1');
+
+    button1.addEventListener('click', function() {
+        input1.value = 'Пример текста';
+    });
+</script>
+<br>
+<br>
+
+<input id="input2">
+<p id="paragraph2"></p>
+<button id="button2">Записать текст</button>
+
+<script>
+    let input2 = document.querySelector('#input2');
+    let paragraph2 = document.querySelector('#paragraph2');
+    let button2 = document.querySelector('#button2');
+
+    button2.addEventListener('click', function() {
+        paragraph2.textContent = input2.value;
+    });
+</script>
+<br>
+<br>
+
+<input id="input3">
+<input id="input4">
+<button id="button3">Возвести в квадрат</button>
+
+<script>
+    let input3 = document.querySelector('#input3');
+    let input4 = document.querySelector('#input4');
+    let button3 = document.querySelector('#button3');
+
+    button3.addEventListener('click', function() {
+        let number = parseFloat(input3.value);
+        input4.value = number * number;
+    });
+</script>
+<br>
+<br>
+
+<input id="input5">
+<input id="input6">
+<button id="button4">Поменять местами</button>
+
+<script>
+    let input5 = document.querySelector('#input5');
+    let input6 = document.querySelector('#input6');
+    let button4 = document.querySelector('#button4');
+
+    button4.addEventListener('click', function() {
+        let temp = input5.value;
+        input5.value = input6.value;
+        input6.value = temp;
+    });
+</script>
+<br>
+<br>
+
+<input id="input7">
+<input id="input8">
+<input id="input9">
+<input id="input10">
+<input id="input11">
+<p id="averageParagraph"></p>
+<button id="button5">Вычислить среднее</button>
+
+<script>
+    let inputs = [
+        document.querySelector('#input7'),
+        document.querySelector('#input8'),
+        document.querySelector('#input9'),
+        document.querySelector('#input10'),
+        document.querySelector('#input11')
+    ];
+    let averageParagraph = document.querySelector('#averageParagraph');
+    let button5 = document.querySelector('#button5');
+
+    button5.addEventListener('click', function() {
+        let sum = 0;
+        let count = 0;
+
+        for (let input of inputs) {
+            let value = parseFloat(input.value);
+            if (!isNaN(value)) {
+                sum += value;
+                count++;
+            }
+        }
+
+        let average = sum / count;
+        averageParagraph.textContent = 'Среднее арифметическое: ' + average;
+    });
+</script>
+
+</body>
+</html>
