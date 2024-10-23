@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>351#1</h1>
+<div id="elem1" class="content no-gap"></div>
+<button id="button1">Показать класс</button>
+
+<script>
+    let elem1 = document.querySelector('#elem1');
+    let button1 = document.querySelector('#button1');
+
+    button1.addEventListener('click', function() {
+        console.log(elem1.className);
+    });
+</script>
+
+<h1>351#2</h1>
+<div id="elem2"></div>
+<button id="button2">Добавить класс</button>
+
+<script>
+    let elem2 = document.querySelector('#elem2');
+    let button2 = document.querySelector('#button2');
+
+    button2.addEventListener('click', function() {
+        elem2.className = 'new-class';
+    });
+</script>
+
+<h1>351#3</h1>
+<div id="elem3" class="aaa bbb ccc"></div>
+<button id="button3">Получить классы</button>
+
+<script>
+    let elem3 = document.querySelector('#elem3');
+    let button3 = document.querySelector('#button3');
+
+    button3.addEventListener('click', function() {
+        let classes = elem3.className.split(' ');
+        console.log(classes);
+    });
+</script>
+
+</body>
+</html>
