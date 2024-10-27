@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p class="text">Первый абзац</p>
+<p class="text">Второй абзац</p>
+<p class="text">Третий абзац</p>
+<p class="text">Четвертый абзац</p>
+<p class="text">Пятый абзац</p>
+
+<script>
+    let paragraphs = document.querySelectorAll('.text');
+
+    paragraphs.forEach(function(paragraph) {
+        paragraph.addEventListener('click', function() {
+            this.textContent += '!';
+        });
+    });
+</script>
+
+</body>
+</html>

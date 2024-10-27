@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input id="myInput" type="text">
+
+<script>
+    let input = document.querySelector('#myInput');
+
+    input.addEventListener('focus', function() {
+        this.value = 1;
+    });
+
+    input.addEventListener('blur', function() {
+        this.value = 2;
+    });
+</script>
+
+</body>
+</html>
