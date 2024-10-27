@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" value="10">
+<input type="text" value="20">
+<input type="text" value="30">
+
+<p id="sumResult">Сумма: </p>
+<button id="calculateSum">Вычислить сумму</button>
+
+<script>
+    document.getElementById('calculateSum').addEventListener('click', function() {
+        let inputs = document.querySelectorAll('input');
+        let sum = 0;
+        for (let input of inputs) {
+            let num = parseFloat(input.value);
+            if (!isNaN(num)) {
+                sum += num;
+            }
+        }
+        document.getElementById('sumResult').textContent = 'Сумма: ' + sum;
+    });
+</script>
+
+</body>
+</html>

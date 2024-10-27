@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>Первый абзац</p>
+<p>Второй абзац</p>
+<p>Третий абзац</p>
+<button id="addNumbers">Добавить номера</button>
+
+<script>
+    document.getElementById('addNumbers').addEventListener('click', function() {
+        let paragraphs = document.querySelectorAll('p');
+        paragraphs.forEach((paragraph, index) => {
+            paragraph.textContent += ` ${index + 1}`;
+        });
+    });
+</script>
+
+</body>
+</html>

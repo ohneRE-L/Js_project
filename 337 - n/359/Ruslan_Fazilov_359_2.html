@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="button">1</button>
+
+<script>
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function incrementValue() {
+        this.textContent = Number(this.textContent) + 1;
+        if (this.textContent == 10) {
+            this.removeEventListener('click', incrementValue);
+        }
+    });
+</script>
+
+</body>
+</html>

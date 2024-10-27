@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a id="link" href="https://github.com/ohneRE-L/Js_project">Мой github репозиторий</a>
+<button id="button">Добавить ссылку</button>
+
+<script>
+    let link = document.querySelector('#link');
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function addHref() {
+        link.textContent += ` (${link.href})`;
+        button.removeEventListener('click', addHref);
+    });
+</script>
+
+</body>
+</html>
