@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>Абзац 1</p>
+<p>Абзац 2</p>
+<p>Абзац 3</p>
+
+<script>
+    let paragraphs = document.querySelectorAll('p');
+
+    for (let paragraph of paragraphs) {
+        paragraph.addEventListener('click', function addExclamation() {
+            this.textContent += '!';
+            this.removeEventListener('click', addExclamation);
+        });
+    }
+</script>
+
+</body>
+</html>
