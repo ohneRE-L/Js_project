@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input id="inp1" type="number">
+<input id="inp2" type="number">
+<p id="res"></p>
+<button id="btn">click</button>
+<script>
+    let btn = document.querySelector('#btn');
+    let res = document.querySelector('#res');
+    let inp1 = document.querySelector('#inp1');
+    let inp2 = document.querySelector('#inp2');
+
+    btn.addEventListener('click', function() {
+        res.textContent = Number(inp1.value) + Number(inp2.value);
+    });
+</script>
+
+</body>
+</html>
