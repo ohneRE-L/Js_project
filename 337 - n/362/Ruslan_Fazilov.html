@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>2000</li>
+    <li>2004</li>
+    <li>2021</li>
+    <li>2022</li>
+    <li>2025</li>
+    <li>2031</li>
+</ul>
+
+<script>
+    //Получение всех элементов списка
+    let years = document.querySelectorAll('li');
+    console.log(years);
+
+    //Перебор элементов и вывод их по отдельности
+    for (let year of years) {
+        console.log(year);
+    }
+
+    //Вывод текста этих элементов
+    for (let year of years) {
+        console.log(year.textContent);
+    }
+
+    //Функция для расчета суммы цифр числа
+    function sumOfDigits(number) {
+        return String(number).split('').reduce((sum, digit) => sum + Number(digit), 0);
+    }
+
+    //Нахождение годов, сумма цифр которых равна 6, и вывод их
+    for (let year of years) {
+        let yearNumber = +year.textContent;
+        if (sumOfDigits(yearNumber) === 6) {
+            console.log(yearNumber);
+        }
+    }
+
+    //Нахождение суммы этих годов и вывод
+    let totalSum = 0;
+
+    for (let year of years) {
+        let yearNumber = +year.textContent;
+        if (sumOfDigits(yearNumber) === 6) {
+            totalSum += yearNumber;
+        }
+    }
+
+    console.log(totalSum);
+</script>
+
+</body>
+</html>
