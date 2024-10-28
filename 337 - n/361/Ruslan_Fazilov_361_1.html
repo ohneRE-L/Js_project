@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>3</li>
+    <li>5</li>
+    <li>7</li>
+    <li>9</li>
+    <li>12</li>
+</ul>
+
+<script>
+    // 361#1
+    let items1 = document.querySelectorAll('li');
+
+    for (let item of items1) {
+        item.addEventListener('click', function increase() {
+            this.textContent = Number(this.textContent) + 1;
+        });
+    }
+
+    // 361#2
+    let items2 = document.querySelectorAll('li');
+
+    for (let item of items2) {
+        item.addEventListener('click', function increaseOnce() {
+            this.textContent = Number(this.textContent) + 1;
+            this.removeEventListener('click', increaseOnce);
+        });
+    }
+
+    // 361#3
+    let items3 = document.querySelectorAll('li');
+
+    for (let item of items3) {
+        item.addEventListener('click', function increaseUntil10() {
+            let currentValue = Number(this.textContent);
+            if (currentValue < 10) {
+                this.textContent = currentValue + 1;
+            }
+        });
+    }
+</script>
+
+
+</body>
+</html>
