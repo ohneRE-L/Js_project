@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+<input type="text" id="commaInput">
+
+<script>
+    const commaInput = document.getElementById('commaInput');
+
+    commaInput.addEventListener('blur', () => {
+        const numbers = commaInput.value.split(',').map(Number);
+        const average = numbers.reduce((a, b) => a + b, 0) / numbers.length;
+        console.log(average);
+    });
+</script>
+
+</body>
+</html>

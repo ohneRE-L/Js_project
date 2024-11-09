@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="factorialInput">
+<button id="factorialButton">Вычислить факториал</button>
+<p id="factorialParagraph"></p>
+
+<script>
+    const factorialInput = document.getElementById('factorialInput');
+    const factorialButton = document.getElementById('factorialButton');
+    const factorialParagraph = document.getElementById('factorialParagraph');
+
+    factorialButton.addEventListener('click', () => {
+        let num = +factorialInput.value;
+        let result = 1;
+        for (let i = 1; i <= num; i++) {
+            result *= i;
+        }
+        factorialParagraph.textContent = result;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<div>Пример текста, который нужно обрезать</div>
+<div>Короткий текст</div>
+
+<script>
+    const divs = document.querySelectorAll('div');
+
+    divs.forEach(div => {
+        if (div.textContent.length > 10) {
+            div.textContent = div.textContent.slice(0, 10) + '...';
+        }
+    });
+</script>
+
+</body>
+</html>

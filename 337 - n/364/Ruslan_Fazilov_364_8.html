@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="dateInput">
+
+<script>
+    const dateInput = document.getElementById('dateInput');
+
+    dateInput.addEventListener('blur', () => {
+        const [day, month, year] = dateInput.value.split('.');
+        dateInput.value = `${year}-${month}-${day}`;
+    });
+</script>
+
+
+</body>
+</html>

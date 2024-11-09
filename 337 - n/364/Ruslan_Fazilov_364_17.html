@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="clickCount">
+<p>1</p>
+<p>2</p>
+
+<script>
+    const clickCountInput = document.getElementById('clickCount');
+    const paragraphs = document.querySelectorAll('p');
+
+    let count = 0;
+
+    paragraphs.forEach(para => {
+        para.addEventListener('click', () => {
+            count++;
+            clickCountInput.value = count;
+        });
+    });
+</script>
+
+
+</body>
+</html>

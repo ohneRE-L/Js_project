@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="shuffleInput">
+<button id="shuffleButton">Перемешать</button>
+
+<script>
+    const shuffleInput = document.getElementById('shuffleInput');
+    const shuffleButton = document.getElementById('shuffleButton');
+
+    shuffleButton.addEventListener('click', () => {
+        const shuffled = shuffleInput.value.split('').sort(() => Math.random() - 0.5).join('');
+        shuffleInput.value = shuffled;
+    });
+</script>
+
+</body>
+</html>

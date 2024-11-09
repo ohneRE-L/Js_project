@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="numberInput">
+
+<script>
+    const numberInput = document.getElementById('numberInput');
+
+    numberInput.addEventListener('blur', () => {
+        if (numberInput.value.includes('3')) {
+            console.log('Содержит цифру 3');
+        } else {
+            console.log('Не содержит цифру 3');
+        }
+    });
+</script>
+
+</body>
+</html>

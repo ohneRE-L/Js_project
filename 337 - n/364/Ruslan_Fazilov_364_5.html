@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+<input type="text" id="fioInput">
+<input type="text" id="lastName">
+<input type="text" id="firstName">
+<input type="text" id="middleName">
+
+<script>
+    const fioInput = document.getElementById('fioInput');
+    const lastName = document.getElementById('lastName');
+    const firstName = document.getElementById('firstName');
+    const middleName = document.getElementById('middleName');
+
+    fioInput.addEventListener('blur', () => {
+        const [last, first, middle] = fioInput.value.split(' ');
+        lastName.value = last;
+        firstName.value = first;
+        middleName.value = middle;
+    });
+</script>
+
+
+</body>
+</html>

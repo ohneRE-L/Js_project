@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<button id="addNumbersButton">Добавить номера</button>
+<p>Абзац 1</p>
+<p>Абзац 2</p>
+<p>Абзац 3</p>
+
+<script>
+    const button = document.getElementById('addNumbersButton');
+    const paragraphs = document.querySelectorAll('p');
+
+    button.addEventListener('click', () => {
+        paragraphs.forEach((para, index) => {
+            para.textContent += ` ${index + 1}`;
+        });
+    });
+</script>
+
+
+</body>
+</html>

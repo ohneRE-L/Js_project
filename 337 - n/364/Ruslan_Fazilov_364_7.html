@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="wordInput">
+
+<script>
+    const wordInput = document.getElementById('wordInput');
+
+    wordInput.addEventListener('blur', () => {
+        const words = wordInput.value.trim().split(/\s+/);
+        console.log(words.length);
+    });
+</script>
+
+
+</body>
+</html>

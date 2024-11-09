@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Examples</title>
+</head>
+<body>
+
+<input type="text" id="numberInput">
+
+<script>
+    const numberInput = document.getElementById('numberInput');
+
+    numberInput.addEventListener('blur', () => {
+        let sum = 0;
+        for (let digit of numberInput.value) {
+            sum += +digit;
+        }
+        console.log(sum);
+    });
+</script>
+
+
+</body>
+</html>
